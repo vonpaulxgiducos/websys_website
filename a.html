@@ -15,10 +15,25 @@
 <!--<style>
 body {
   background-image: url('images.jpg');
-}
+}   
 </style>-->
 
-    <header><b><i><h1>My Basic Portfolio</h1></b></i></header>
+    <header><b><i><h1>My Basic Portfolio
+        <!-- Navbar Section -->
+    <nav class="navbar">
+        <class="nav-links">
+            <a href="#">Home‎ ‎ ‎ ‎ ‎ </a>
+            <a href="#">About‎ ‎ ‎ ‎ ‎ </a>
+            <a href="#footer">Contact‎ ‎ ‎ ‎ ‎ </a>
+        </ul>
+        <div class="burger" onclick="toggleNavbar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    </h1></b></i></header>
 
     <img src="khel.jpg" alt="Github" width="300" height="200">
     <cite><div>
@@ -29,9 +44,10 @@ body {
     <h2>Description</h2>    
 
     <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor 
-    incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis 
-    nostrud exercitation ullamco laboris nisi <br> ut aliquip ex ea commodo consequat.
+    I’m a passionate and creative web developer with a strong focus on <br> building intuitive, 
+    responsive, and visually appealing websites. With <br> expertise in HTML, CSS, JavaScript, 
+    and modern frameworks, I aim <br> to bring ideas to life through clean code and beautiful design. 
+    Explore <br> my work to see how I blend functionality with aesthetics to <br> create seamless digital experiences. 
     </p>
 
     <h2>Frameworks</h2>  
@@ -47,6 +63,11 @@ body {
         <li>Learning Module System</li>
         <li>E-commerce</li>
     </ul>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+    Display Date and Time.</button>
+
+    <p id="demo"></p>
     
 
     </p>
