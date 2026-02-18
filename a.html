@@ -1,87 +1,106 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Von's Basic Site</title>
+    <title>Von's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="v_logo_icon_249294.ico">
     <link rel="stylesheet" href="b.css">
 </head>
 
 <body>
 
-    <!--Proper Structuring for a Website Contents daw ana maam--> 
-
-<!--<style>
-body {
-  background-image: url('images.jpg');
-}   
-</style>-->
-
-    <header><b><i><h1>My Basic Portfolio
-        <!-- Navbar Section -->
-    <nav class="navbar">
-        <class="nav-links">
-            <a href="#">Home‎ ‎ ‎ ‎ ‎ </a>
-            <a href="#">About‎ ‎ ‎ ‎ ‎ </a>
-            <a href="#footer">Contact‎ ‎ ‎ ‎ ‎ </a>
-        </ul>
-        <div class="burger" onclick="toggleNavbar()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="header-inner">
+            <div class="logo">Von Giducos</div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+                <div class="burger" onclick="toggleNavbar()" aria-label="Toggle menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    </h1></b></i></header>
+    <main>
 
-    <img src="khel.jpg" alt="Github" width="300" height="200">
-    <cite><div>
-    I am Von Giducos, an aspiring and passionate filmmaker. <br>
-    Studying Bachelor of Science in Information Technology.<br> I am also passionate on making websites. <br> and making music. 
-    </div></cite>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img src="khel.jpg" alt="Von Giducos" class="profile-pic">
+                <div class="hero-text">
+                    <h1>Hi, I'm Von Giducos.</h1>
+                    <p class="tagline">Filmmaker · Developer · Music Maker</p>
+                    <p>BS Information Technology student with a passion for storytelling through film, code, and music.</p>
+                </div>
+            </div>
+        </section>
 
-    <h2>Description</h2>    
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>
+                I'm a web developer focused on building intuitive, responsive, and visually appealing websites.
+                With experience in HTML, CSS, JavaScript, and modern frameworks, I aim to bring ideas to life
+                through clean code and thoughtful design.
+            </p>
+        </section>
 
-    <p>
-    I’m a passionate and creative web developer with a strong focus on <br> building intuitive, 
-    responsive, and visually appealing websites. With <br> expertise in HTML, CSS, JavaScript, 
-    and modern frameworks, I aim <br> to bring ideas to life through clean code and beautiful design. 
-    Explore <br> my work to see how I blend functionality with aesthetics to <br> create seamless digital experiences. 
-    </p>
+        <!-- Skills Section -->
+        <section class="section">
+            <h2>Frameworks &amp; Tools</h2>
+            <div class="skills">
+                <span class="skill-tag">Laravel</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+            </div>
+        </section>
 
-    <h2>Frameworks</h2>  
-    <p>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>Personal Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Learning Module System</h3>
+                    <p>A web-based platform designed to streamline educational content delivery and student engagement.</p>
+                </div>
+                <div class="project-card">
+                    <h3>E-commerce</h3>
+                    <p>A full-featured online store with product listings, cart management, and a checkout flow.</p>
+                </div>
+            </div>
+        </section>
 
-    <ul>
-        <li>Laravel + REACT</li>
-        <li>Node.js</li>
-    </ul>
+        <!-- Date Tool Section -->
+        <section class="section date-section">
+            <button type="button" class="btn" onclick="showDate()">Show Current Date &amp; Time</button>
+            <p id="demo" class="date-output"></p>
+        </section>
 
-    <b><i><h2>My Personal Projects</h2></b></i>
-    <ul>
-        <li>Learning Module System</li>
-        <li>E-commerce</li>
-    </ul>
+    </main>
 
-    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
-    Display Date and Time.</button>
-
-    <p id="demo"></p>
-    
-
-    </p>
-
-    <footer>
-    <strong><h2>Contact Me</h2></strong>
-
-    <p>
-    <!--Github Link:--> 
-    </p>
-    <img src="github photo.jpg" alt="Github" width="90" height="90">
-    <a href="https://github.com/vonpaulxgiducos">Visit my GitHub Account</a>
-    
+    <!-- Footer / Contact -->
+    <footer id="footer">
+        <h2>Contact Me</h2>
+        <div class="footer-links">
+            <img src="github photo.jpg" alt="GitHub profile" class="github-pic">
+            <a href="https://github.com/vonpaulxgiducos" class="github-link" target="_blank" rel="noopener">Visit my GitHub</a>
+        </div>
+        <p class="footer-note">&copy; 2025 Von Giducos</p>
     </footer>
+
+    <script src="c.js"></script>
 
 </body>
 
